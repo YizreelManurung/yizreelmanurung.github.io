@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Coca-Cola</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="cocacolafix.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function w3_open() {
+      document.getElementById("main").style.marginLeft = "25%";
+      document.getElementById("mySidebar").style.width = "25%";
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("openNav").style.display = 'none';
+    }
+    function w3_close() {
+      document.getElementById("main").style.marginLeft = "0%";
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("openNav").style.display = "inline-block";
+    }
+    </script>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+      </script>
+</head>
+<body>
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="biodata_tap.html" class="w3-bar-item w3-button">Biodata</a>
+    <a href="form.html" class="w3-bar-item w3-button">Contact Us</a>
+    <a href="sejarah.html" class="w3-bar-item w3-button">Sejarah</a>
+    <a href="produk.html" class="w3-bar-item w3-button">Produk</a>
+  </div>
+  
+  <div id="main">
+  
+  <div>
+    <button id="openNav" class="w3-button w3-xlarge" onclick="w3_open()">&#9776; Menu</button>
+    <div class="w3-container">
+    </div>
+  </div>
+  <div>
+    <img  class="logo" src="Coca-Cola-Logo.png" alt="logo">
+  </div>
+<div class="content">
+    <div class="header">
+<img class="story" src="desktop-banner.jpg" alt=""></div>
+</div>
+<div>
+  <img class="story" src="desktop-story-1.jpg" alt="">
+</div>
+<div>
+  <img class="story" src="produk.jpg" alt="">
+  </div>
+<br>
+<br>
+
+
+<div>
+<h3>SOCIAL UPDATE</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?=1&mute=1">
+      </iframe>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <iframe width="420" height="345" src="https://www.youtube.com/watch?v=HkboBCpm83g">
+      </iframe>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <iframe width="420" height="345" src="https://www.youtube.com/watch?v=QgaTQ5-XfMM?controls=0">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<h4>Galery Video</h4>
+
+<div class="row">
+  <div class="col-md-4">
+    <a href="https://www.coca-cola.co.id/id/video"><img src="video_happybreak.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="col-md-4">
+    <a href="https://www.coca-cola.co.id/id/video"><img src="video_sac.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="col-md-4">
+    <a href="https://www.coca-cola.co.id/id/video"><img src="video_ibu.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+<div class="footer">
+  <div class="contain">
+    <div class="col">
+      <h1>Support</h1>
+      <ul>
+        <li><a href="form.html">Contact us</li>
+        <li>Web chat</li>
+        <li>Open ticket</li>
+      </ul>
+    </div>
+    <div class="col social">
+      <h1>Social</h1>
+      <ul>
+        <li><a href="https://www.instagram.com/cocacola_id/?hl=en"><img src="instagram-new-logo-may-2016.jpg" width="32" style="width: 32px;"></li>
+        <li><a href="https://www.facebook.com/cocacolaindonesia/?brand_redir=40796308305"><img src="md_5aff6081b74c8.jpg" width="32" style="width: 32px;"></li>
+      </ul>
+    </div>
+    <div class="clearfix"> </div>
+  </div>
+</div>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>© 2020 The Coca-Cola Company, all rights reserved, <a href="https://www.coca-cola.co.id/id/persyaratan-penggunaann">Persyaratan Penggunaan | <a href="coca-cola.co.id/id/kebijakan-privasi">Kebijakan Privasi</p>
+</div>
+
+
+</body>
+</html>
